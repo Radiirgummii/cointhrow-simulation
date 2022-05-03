@@ -8,7 +8,7 @@ def progress_bar (progress, total):
 
 i = 0
 a = 0
-print("Bitte Anzahl der Simulationsdurchläufe eingeben")
+print("please specify count of simulation cycles")
 t = int(input())
 kopf = 0
 zahl = 0
@@ -30,4 +30,4 @@ while i != t:
       #print("zahl")
   i = i + 1 
   progress_bar(i, t)
-print("\n\n\nZahl:   " + str(zahl) + "   " + str(100 / (t / zahl)) + "%" + "\nBeides: " + str(beides) + "   " + str(100 / (t / beides)) + "%" + "\nKopf:   " + str(kopf) + "   " + str(100 / (t / kopf)) + "%" )
+print("\n\n\nNumber: " + str(zahl) + "   " + str(100 / (t / zahl)) + "%" + "\nBoth:   " + str(beides) + "   " + str(100 / (t / beides)) + "%" + "\nHead:   " + str(kopf) + "   " + str(100 / (t / kopf)) + "%" )
